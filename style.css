@@ -1,0 +1,117 @@
+body {
+  font-family: "Roboto", Arial, sans-serif; /* Modern font */
+  padding: 1rem;
+  background-color: #e8f5e9; /* Soft green background */
+  color: #2e7d32; /* Dark green text */
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+  background-color: #81c784; /* Light green header background */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #1b5e20; /* Darker green for header text */
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #4caf50; /* Bright green for subtext */
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#station-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Increased spacing */
+  justify-content: center; /* Center stations */
+}
+
+.station {
+  border: 1px solid #a5d6a7; /* Softer border color */
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #ffffff; /* White background for contrast */
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+}
+
+.station:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+#search-feedback {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #d32f2f; /* Red for error messages */
+}
+
+#search-feedback p {
+  margin: 0;
+}
+
+button {
+  background-color: #4caf50; /* Bright green button */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #388e3c; /* Darker green on hover */
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  border: 1px solid #a5d6a7;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 0.5rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #1b5e20; /* Dark green for section titles */
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#grouped-stations {
+  background-color: #c8e6c9; /* Light green background */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
+  #station-list {
+    flex-direction: column; /* Stack stations vertically */
+    align-items: center;
+  }
+
+  .station {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+}
